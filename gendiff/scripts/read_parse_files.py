@@ -1,18 +1,8 @@
 import json
-from gendiff.scripts.gendiff import make_parser
+import os
 
-def read_json(file):
-    with open(file) as f:
-        return json.load(f)
-    
-def main():
-    parser = make_parser()
-    args = parser.parse_args()
+DATA_DIR = os.path.join('gendiff', 'scripts', 'data')
 
-    data1 = read_json(args.first_file)
-    data2 = read_json(args.second_file)
-
-    return data1, data2
-
-if __name__ == "__main__":
-    main()
+def read_json(filename):
+    path = os.path.join(DATA_DIR, filename)
+    return json.load(open(path))
