@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pytest-cov>=7.0.0",
+]
 
 [project.scripts]
 gendiff = "gendiff.scripts.gendiff:main"
@@ -18,5 +20,6 @@ packages = ["gendiff"]
 
 [dependency-groups]
 dev = [
+    "pytest>=8.4.2",
     "ruff>=0.13.0",
 ]
