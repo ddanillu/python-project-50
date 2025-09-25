@@ -1,4 +1,4 @@
-from .scripts.read_parse_files import read_json
+from gendiff.parser import read_files
 
 
 def formatted_value(value):
@@ -18,8 +18,8 @@ def generate_diff(file1, file2):
     Ключи в алфавитном порядке. Для изменений выводит сначала строку с '-',
     затем строку с '+' для одного ключа.
     """
-    first = read_json(file1)
-    second = read_json(file2)
+    first = read_files(file1)
+    second = read_files(file2)
     keys = sorted(set(first.keys()) | set(second.keys()))
     lines = []
     indent = '    '

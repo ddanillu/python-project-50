@@ -8,3 +8,4 @@
 
 ### Example asciinema
 [![asciicast](https://asciinema.org/a/f1gk6fiae5JGVojGAPvTHXtQs.svg)](https://asciinema.org/a/f1gk6fiae5JGVojGAPvTHXtQs)
+[![asciicast](https://asciinema.org/a/QAdMfQFoJl5DrL1Ha0RSiiwLj.svg)](https://asciinema.org/a/QAdMfQFoJl5DrL1Ha0RSiiwLj)
