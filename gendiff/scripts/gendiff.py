@@ -14,6 +14,7 @@ def make_parser():
     parser.add_argument(
         '-f', '--format',
         metavar='FORMAT',
+        default='stylish',
         help='set format of output',
     )
     return parser
@@ -22,7 +23,7 @@ def make_parser():
 def main():
     parser = make_parser()
     args = parser.parse_args()
-    diff = generate_diff(args.first_file, args.second_file)
+    diff = generate_diff(args.first_file, args.second_file, args.format)
     print(diff)
 
 
