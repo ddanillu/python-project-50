@@ -1,3 +1,3 @@
-from .stylish import format_stylish
+from .stylish import stringify
 
-all = ["format_stylish"]
+all = ["stringify"]

@@ -17,9 +17,11 @@ def test_generate_diff_from_yaml_files():
     expected = read_expected('generate_result.txt')
     assert generate_diff('file1.yaml', 'file2.yaml') == expected
 
+
 def test_generate_diff_big_json():
     expected = read_expected('generate_result2.txt')
     assert generate_diff('filepath1.json', 'filepath2.json') == expected
+
 
 def test_generate_big_yaml():
     expected = read_expected('generate_result2.txt')

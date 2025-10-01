@@ -9,7 +9,9 @@ def build_diff(d1, d2):
             elif v1 == v2:
                 tree[key] = {"type": "unchanged", "value": v1}
             else:
-                tree[key] =  {"type": "changed", "old_value": v1, "new_value": v2}
+                tree[key] = {
+                    "type": "changed", "old_value": v1, "new_value": v2
+                    }
         else:
             tree[key] = {"type": "removed", "value": v1}
     for key in d2.keys():
