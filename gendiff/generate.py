@@ -1,10 +1,12 @@
 from gendiff.parser import read_files
 
 from .diff_builder import build_diff
+from .formatters.plain import plain_formatter
 from .formatters.stylish import stringify
 
 FORMATTERS = {
-    'stylish': stringify
+    'stylish': stringify,
+    'plain': plain_formatter
 }
 
 
