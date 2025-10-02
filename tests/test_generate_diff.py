@@ -31,3 +31,8 @@ def test_generate_big_yaml():
 def test_generate_plain():
     expected = read_expected('generate_plain.txt')
     assert generate_diff('filepath1.yml', 'filepath2.yml', 'plain') == expected
+
+
+def test_generate_json():
+    expected = read_expected('generate_json.json')
+    assert generate_diff('filepath1.yml', 'filepath2.json', 'json') == expected
