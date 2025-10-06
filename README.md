@@ -10,11 +10,11 @@
 Gendiff is a command-line utility that compares two configuration files (JSON/YAML/INI) and shows differences in multiple output formats (stylish, plain, json). It supports nested structures and indicates added, removed and changed fields.
 
 ### Technologies
-Python 3.12
-pytest — testing
-argparse — CLI argument parsing
-json, PyYAML — format parsing
-GitHub Actions
+- Python 3.12
+- pytest — testing
+- argparse — CLI argument parsing
+- json, PyYAML — format parsing
+- GitHub Actions
 
 ### Usage
 Run from the command line:

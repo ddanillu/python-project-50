@@ -33,3 +33,5 @@ jobs:
            -Dsonar.coverage.exclusions=tests/**
            -Dsonar.exclusions=tests/**
            -Dsonar.python.coverage.reportPaths=coverage.xml
+           -Dsonar.projectKey=ddanillu_python-project-50
+           -Dsonar.organization=ddanillu-organization
