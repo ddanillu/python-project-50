@@ -7,6 +7,8 @@ def format_value(value):
         return str(value).lower()
     if value == '':
         return "''"
+    if isinstance(value, int):
+        return str(value)
     return f"'{value}'"
 
 
