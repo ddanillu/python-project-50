@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from gendiff.generate import generate_diff
+from gendiff.scripts.generate import generate_diff
 
 
 def read_expected(name):

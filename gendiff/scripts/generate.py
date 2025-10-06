@@ -1,9 +1,9 @@
-from gendiff.parser import read_files
+from gendiff.formatters.json import format_json
+from gendiff.formatters.plain import plain_formatter
+from gendiff.formatters.stylish import stringify
+from gendiff.scripts.parser import read_files
 
 from .diff_builder import build_diff
-from .formatters.json import format_json
-from .formatters.plain import plain_formatter
-from .formatters.stylish import stringify
 
 FORMATTERS = {
     'stylish': stringify,

@@ -6,6 +6,37 @@
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ddanillu_python-project-50&metric=coverage)](https://sonarcloud.io/summary/new_code?id=ddanillu_python-project-50)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ddanillu_python-project-50&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ddanillu_python-project-50)
 
+### Description
+Gendiff is a command-line utility that compares two configuration files (JSON/YAML/INI) and shows differences in multiple output formats (stylish, plain, json). It supports nested structures and indicates added, removed and changed fields.
+
+### Technologies
+Python 3.12
+pytest — testing
+argparse — CLI argument parsing
+json, PyYAML — format parsing
+GitHub Actions
+
+### Usage
+Run from the command line:
+```
+gendiff <file1> <file2> [--format FORMAT]
+```
+
+### Examples:
+
+Default (stylish):
+```
+gendiff filepath1.json filepath2.json
+```
+Plain format:
+```
+gendiff filepath1.json filepath2.json --format plain
+```
+JSON format:
+```
+gendiff filepath1.json filepath2.json --format json
+```
+
 ### Example asciinema
 [![asciicast](https://asciinema.org/a/f1gk6fiae5JGVojGAPvTHXtQs.svg)](https://asciinema.org/a/f1gk6fiae5JGVojGAPvTHXtQs)
 [![asciicast](https://asciinema.org/a/QAdMfQFoJl5DrL1Ha0RSiiwLj.svg)](https://asciinema.org/a/QAdMfQFoJl5DrL1Ha0RSiiwLj)
