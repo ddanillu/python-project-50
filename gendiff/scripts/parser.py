@@ -3,7 +3,7 @@ import os
 
 import yaml
 
-DATA_DIR = os.path.join('tests', 'data')
+DATA_DIR = os.path.join('tests', 'test_data')
 
 
 def read_files(filename):

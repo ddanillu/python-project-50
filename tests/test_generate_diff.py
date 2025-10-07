@@ -4,7 +4,7 @@ from gendiff.scripts.generate import generate_diff
 
 
 def read_expected(name):
-    p = Path(__file__).parent / 'data' / name
+    p = Path(__file__).parent / 'test_data' / name
     return p.read_text()
 
 
